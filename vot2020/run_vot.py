@@ -9,9 +9,9 @@ if env_path not in sys.path:
 
 from pytracking.evaluation import Tracker
 
-def run_vot2020(tracker_name, tracker_param, run_id=None, debug=0, visdom_info=None):
+def run_vot2020(tracker_name, tracker_param, run_id=None, mask=False, debug=0, visdom_info=None):
     # vot2020=True for segmentation mask generation. 
-    tracker = Tracker(tracker_name, tracker_param, run_id, vot2020=False)       
+    tracker = Tracker(tracker_name, tracker_param, run_id, vot2020=mask)       
     tracker.run_vot2020(debug, visdom_info)
 
 
@@ -20,10 +20,11 @@ def main():
     parser.add_argument('tracker_name', type=str)
     parser.add_argument('tracker_param', type=str)
     parser.add_argument('--run_id', type=int, default=None)
+    parser.add_argument('--mask', type=bool, default=False)
 
     args = parser.parse_args()
 
-    run_vot2020(args.tracker_name, args.tracker_param, args.run_id)
+    run_vot2020(args.tracker_name, args.tracker_param, args.run_id, args.mask)
 
 
 if __name__ == '__main__':
