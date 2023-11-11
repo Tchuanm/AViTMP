@@ -21,11 +21,11 @@ Chuanming Tang, Kai Wang, Joost van de Weijer, Jianlin Zhang, Yongmei Huang
 
 
 ## Setup Environment
- 
 ```
 conda create --name pytracking --file requirements.txt
 source activate pytracking
 ```
+Or reference [pytracking](https://github.com/visionml/pytracking#installation)
 
 ```
 python -c "from pytracking.evaluation.environment import create_default_local_file; create_default_local_file()"
@@ -34,11 +34,10 @@ cd ltr
 ```
 
 ## Data Prapare 
-1. softlink datasets into './data'
+1. Softlink datasets into './data', like:
 ```
-ln -s xxx/lasot  xxx/AViTMP/data/
-.........
-# datasets concluding 
+ln -s .../lasot  .../AViTMP/data/
+# datasets folder 
      |--data
         |--avist
         |--coco
@@ -89,6 +88,10 @@ vot analysis --workspace vot2020 AViTMP
 Notice: If you want to evalute for VOT2020_mask or VOTS2023 (multi-object tracking \& segmentation), you should：
   1. install segmentation model [SAM-HQ](https://github.com/SysCV/sam-hq.git), installed in the same "pytracking" envirment. 
   2. combine VOT with segmentation method to build a tracking \& segmentation two-stage method.
+```
+Set './vot2020/run_vot.py line23 args.mask as True.
+```
+
   ```
   # Note: env setting for VOTS2023
   vot-toolkit==0.6.4
