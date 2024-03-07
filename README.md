@@ -1,4 +1,4 @@
-# Exploiting Image-Related Inductive Biases in Single-Branch Visual Tracking.  [_Arxiv_](https://arxiv.org/abs/2310.19542)  
+# AViTMP: A Tracking-Specific Transformer for Single-Branch Visual Tracking
 Chuanming Tang, Kai Wang, Joost van de Weijer, Jianlin Zhang, Yongmei Huang
 
 
@@ -108,17 +108,3 @@ Set './vot2020/run_vot.py line23 args.mask as True.
 Thanks for the tracking framework [PyTracking](https://github.com/visionml/pytracking) 
 and [OSTrack](https://github.com/botaoye/OSTrack.git), which helps us to quickly implement our ideas.
 
-
-
-### Citation
-If our work is useful for your research, you can consider citing:
-```
-@misc{tang2023exploiting,
-      title={Exploiting Image-Related Inductive Biases in Single-Branch Visual Tracking}, 
-      author={Chuanming Tang and Kai Wang and Joost van de Weijer and Jianlin Zhang and Yongmei Huang},
-      year={2023},
-      eprint={2310.19542},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
