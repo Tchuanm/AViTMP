@@ -1,5 +1,4 @@
-# AViTMP: A Tracking-Specific Transformer for Single-Branch Visual Tracking
-Chuanming Tang, Kai Wang, Joost van de Weijer, Jianlin Zhang, Yongmei Huang
+# [AViTMP: A Tracking-Specific Transformer for Single-Branch Visual Tracking](https://arxiv.org/pdf/2310.19542) 
 [(IEEE Transactions on Intelligent Vehicles )](https://ieeexplore.ieee.org/abstract/document/10584321)
 
 ## TL;DR
@@ -108,3 +107,16 @@ Set './vot2020/run_vot.py line23 args.mask as True.
 Thanks for the tracking framework [PyTracking](https://github.com/visionml/pytracking) 
 and [OSTrack](https://github.com/botaoye/OSTrack.git), which helps us to quickly implement our ideas.
 
+## Citation
+
+If our work is useful for your research, you can consider citing:
+
+```
+@article{tang2024,
+  author={Tang, Chuanming and Wang, Kai and Weijer, Joost van de and Zhang, Jianlin and Huang, Yongmei},
+  journal={IEEE Transactions on Intelligent Vehicles}, 
+  title={AViTMP: A Tracking-Specific Transformer for Single-Branch Visual Tracking}, 
+  year={2024},
+  pages={1-14},
+  doi={10.1109/TIV.2024.3422806}}
+```
