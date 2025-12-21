@@ -112,11 +112,13 @@ and [OSTrack](https://github.com/botaoye/OSTrack.git), which helps us to quickly
 If our work is useful for your research, you can consider citing:
 
 ```
-@article{tang2024,
-  author={Tang, Chuanming and Wang, Kai and Weijer, Joost van de and Zhang, Jianlin and Huang, Yongmei},
+@ARTICLE{tang2024avitmp,
+  author={Tang, Chuanming and Wang, Kai and van de Weijer, Joost and Zhang, Jianlin and Huang, Yongmei},
   journal={IEEE Transactions on Intelligent Vehicles}, 
   title={AViTMP: A Tracking-Specific Transformer for Single-Branch Visual Tracking}, 
-  year={2024},
-  pages={1-14},
+  year={2025},
+  volume={10},
+  number={2},
+  pages={1087-1100},
   doi={10.1109/TIV.2024.3422806}}
 ```
